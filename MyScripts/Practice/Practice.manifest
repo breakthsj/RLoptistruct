@@ -1,0 +1,10 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"script",
+	"author":	"Hong",
+	"description":	{
+		"":	"w"
+	},
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}

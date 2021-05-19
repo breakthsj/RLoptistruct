@@ -1,0 +1,187 @@
+Dialog - 'Autodesk Fusion 360 (Personal - Not for Commercial Use)'    (L0, T23, R1920, B1040)
+['Dialog', 'Autodesk Fusion 360 (Personal - Not for Commercial Use)', 'Autodesk Fusion 360 (Personal - Not for Commercial Use)Dialog', 'Dialog0', 'Dialog1']
+child_window(title="Autodesk Fusion 360 (Personal - Not for Commercial Use)", auto_id="Main--WorkspaceWindow", control_type="Window")
+   | 
+   | Dialog - 'Fusion360'    (L4, T961, R304, B986)
+   | ['Dialog2', 'Fusion360', 'Fusion360Dialog', 'Fusion3600', 'Fusion3601', 'Fusion360Dialog0', 'Fusion360Dialog1']
+   | child_window(title="Fusion360", auto_id="Main--WorkspaceWindow.QTToolFrame:ActivityFeedPalette", control_type="Window")
+   |    | 
+   |    | Custom - ''    (L4, T961, R304, B986)
+   |    | ['Custom', 'COMMENTSCustom', 'Custom0', 'Custom1', 'COMMENTSCustom0', 'COMMENTSCustom1']
+   |    | child_window(auto_id="Main--WorkspaceWindow.QTToolFrame:ActivityFeedPalette.QTMaskedFrame:ActivityFeedPalette", control_type="Custom")
+   |    |    | 
+   |    |    | Static - 'COMMENTS'    (L29, T962, R86, B984)
+   |    |    | ['COMMENTSStatic', 'COMMENTS', 'Static', 'Static0', 'Static1', 'COMMENTSStatic0', 'COMMENTSStatic1']
+   |    |    | child_window(title="COMMENTS", auto_id="Main--WorkspaceWindow.QTToolFrame:ActivityFeedPalette.QTMaskedFrame:ActivityFeedPalette.Name", control_type="Text")
+   |    |    | 
+   |    |    | Button - ''    (L0, T0, R0, B0)
+   |    |    | ['Button', 'Button0', 'Button1']
+   |    |    | child_window(auto_id="Main--WorkspaceWindow.QTToolFrame:ActivityFeedPalette.QTMaskedFrame:ActivityFeedPalette.QTPushButton", control_type="Button")
+   |    |    | 
+   |    |    | Button - ''    (L280, T966, R295, B981)
+   |    |    | ['Button2', 'COMMENTSButton', 'COMMENTSButton0', 'COMMENTSButton1']
+   |    |    | child_window(auto_id="Main--WorkspaceWindow.QTToolFrame:ActivityFeedPalette.QTMaskedFrame:ActivityFeedPalette.QTPushButton", control_type="Button")
+   |    |    | 
+   |    |    | Button - ''    (L298, T968, R303, B979)
+   |    |    | ['Button3', 'COMMENTSButton2']
+   |    |    | child_window(auto_id="Main--WorkspaceWindow.QTToolFrame:ActivityFeedPalette.QTMaskedFrame:ActivityFeedPalette.QTPushButton", control_type="Button")
+   | 
+   | Dialog - 'Fusion360'    (L4, T141, R304, B961)
+   | ['Dialog3', 'Fusion3602', 'Fusion360Dialog2']
+   | child_window(title="Fusion360", auto_id="Main--WorkspaceWindow.QTToolFrame:Browser", control_type="Window")
+   |    | 
+   |    | GroupBox - ''    (L4, T166, R304, B961)
+   |    | ['GroupBox', 'BROWSERGroupBox', 'GroupBox0', 'GroupBox1', 'BROWSERGroupBox0', 'BROWSERGroupBox1']
+   |    | child_window(auto_id="Main--WorkspaceWindow.QTToolFrame:Browser.QTPaletteBackground", control_type="Group")
+   |    | 
+   |    | Custom - ''    (L4, T141, R304, B166)
+   |    | ['Custom2', 'BROWSERCustom']
+   |    | child_window(auto_id="Main--WorkspaceWindow.QTToolFrame:Browser.QTMaskedFrame:Browser", control_type="Custom")
+   |    |    | 
+   |    |    | Static - 'BROWSER'    (L29, T142, R81, B164)
+   |    |    | ['BROWSER', 'Static2', 'BROWSERStatic']
+   |    |    | child_window(title="BROWSER", auto_id="Main--WorkspaceWindow.QTToolFrame:Browser.QTMaskedFrame:Browser.Name", control_type="Text")
+   |    |    | 
+   |    |    | Button - ''    (L0, T0, R0, B0)
+   |    |    | ['Button4']
+   |    |    | child_window(auto_id="Main--WorkspaceWindow.QTToolFrame:Browser.QTMaskedFrame:Browser.QTPushButton", control_type="Button")
+   |    |    | 
+   |    |    | Button - ''    (L7, T146, R22, B161)
+   |    |    | ['Button5']
+   |    |    | child_window(auto_id="Main--WorkspaceWindow.QTToolFrame:Browser.QTMaskedFrame:Browser.QTPushButton", control_type="Button")
+   |    |    | 
+   |    |    | Button - ''    (L280, T146, R295, B161)
+   |    |    | ['BROWSERButton', 'Button6', 'BROWSERButton0', 'BROWSERButton1']
+   |    |    | child_window(auto_id="Main--WorkspaceWindow.QTToolFrame:Browser.QTMaskedFrame:Browser.QTPushButton", control_type="Button")
+   |    |    | 
+   |    |    | Button - ''    (L298, T148, R303, B159)
+   |    |    | ['BROWSERButton2', 'Button7']
+   |    |    | child_window(auto_id="Main--WorkspaceWindow.QTToolFrame:Browser.QTMaskedFrame:Browser.QTPushButton", control_type="Button")
+   |    | 
+   |    | GroupBox - 'ToolbarFramework::QTView'    (L4, T166, R200, B269)
+   |    | ['ToolbarFramework::QTView', 'GroupBox2', 'ToolbarFramework::QTViewGroupBox', 'ToolbarFramework::QTView0', 'ToolbarFramework::QTView1', 'ToolbarFramework::QTViewGroupBox0', 'ToolbarFramework::QTViewGroupBox1']
+   |    | child_window(title="ToolbarFramework::QTView", auto_id="Main--WorkspaceWindow.QTToolFrame:Browser.QTView:(3)Browser:[0]", control_type="Group")
+   | 
+   | Dialog - 'ToolbarFramework::QTView'    (L841, T962, R1078, B986)
+   | ['ToolbarFramework::QTView2', 'ToolbarFramework::QTViewDialog', 'Dialog4', 'ToolbarFramework::QTViewDialog0', 'ToolbarFramework::QTViewDialog1']
+   | child_window(title="ToolbarFramework::QTView", auto_id="Main--WorkspaceWindow.QTCanvas.Nav:QTView:(102)NavToolbar", control_type="Window")
+   | 
+   | Dialog - 'ToolbarFramework::QTView'    (L1915, T985, R1916, B986)
+   | ['ToolbarFramework::QTView3', 'ToolbarFramework::QTViewDialog2', 'Dialog5']
+   | child_window(title="ToolbarFramework::QTView", auto_id="Main--WorkspaceWindow.QTCanvas.QTView:(102)MessageTray", control_type="Window")
+   | 
+   | TitleBar - ''    (L16, T-5, R1920, B23)
+   | ['TitleBar']
+   |    | 
+   |    | Menu - '시스템'    (L0, T0, R22, B22)
+   |    | ['Menu', '시스템', '시스템Menu', '시스템0', '시스템1']
+   |    | child_window(title="시스템", auto_id="MenuBar", control_type="MenuBar")
+   |    |    | 
+   |    |    | MenuItem - '시스템'    (L0, T0, R22, B22)
+   |    |    | ['MenuItem', '시스템2', '시스템MenuItem']
+   |    |    | child_window(title="시스템", control_type="MenuItem")
+   |    | 
+   |    | Button - '최소화'    (L1779, T8, R1826, B22)
+   |    | ['최소화Button', '최소화', 'Button8']
+   |    | child_window(title="최소화", control_type="Button")
+   |    | 
+   |    | Button - '복원'    (L1826, T8, R1872, B22)
+   |    | ['Button9', '복원', '복원Button']
+   |    | child_window(title="복원", control_type="Button")
+   |    | 
+   |    | Button - '닫기'    (L1872, T8, R1928, B22)
+   |    | ['닫기Button', 'Button10', '닫기']
+   |    | child_window(title="닫기", control_type="Button")
+   | 
+   | GroupBox - ''    (L0, T23, R1920, B137)
+   | ['GroupBox3']
+   | child_window(auto_id="Main--WorkspaceWindow.QTApplicationBar-0", control_type="Group")
+   |    | 
+   |    | GroupBox - ''    (L189, T23, R1666, B55)
+   |    | ['GroupBox4']
+   |    | child_window(auto_id="Main--WorkspaceWindow.QTApplicationBar-0.QTABTabBar-0", control_type="Group")
+   |    |    | 
+   |    |    | Button - ''    (L1611, T26, R1627, B46)
+   |    |    | ['Button11']
+   |    |    | child_window(auto_id="Main--WorkspaceWindow.QTApplicationBar-0.QTABTabBar-0.closeButton", control_type="Button")
+   |    |    | 
+   |    |    | Button - 'New Tab'    (L1634, T27, R1662, B55)
+   |    |    | ['New Tab', 'Button12', 'New TabButton']
+   |    |    | child_window(title="New Tab", auto_id="Main--WorkspaceWindow.QTApplicationBar-0.QTABTabBar-0.newTab", control_type="Button")
+   |    | 
+   |    | GroupBox - ''    (L0, T23, R189, B55)
+   |    | ['GroupBox5']
+   |    | child_window(auto_id="Main--WorkspaceWindow.QTApplicationBar-0.QATToolBar-0", control_type="Group")
+   |    |    | 
+   |    |    | GroupBox - 'ToolbarFramework::QTView'    (L0, T23, R189, B55)
+   |    |    | ['ToolbarFramework::QTView4', 'GroupBox6', 'ToolbarFramework::QTViewGroupBox2']
+   |    |    | child_window(title="ToolbarFramework::QTView", auto_id="Main--WorkspaceWindow.QTApplicationBar-0.QATToolBar-0.QAT:QTView:(103)QAT", control_type="Group")
+   |    | 
+   |    | GroupBox - ''    (L1666, T23, R1920, B55)
+   |    | ['GroupBox7']
+   |    | child_window(auto_id="Main--WorkspaceWindow.QTApplicationBar-0.QATRightToolBar-0", control_type="Group")
+   |    |    | 
+   |    |    | GroupBox - 'ToolbarFramework::QTView'    (L1666, T23, R1920, B55)
+   |    |    | ['ToolbarFramework::QTView5', 'GroupBox8', 'ToolbarFramework::QTViewGroupBox3']
+   |    |    | child_window(title="ToolbarFramework::QTView", auto_id="Main--WorkspaceWindow.QTApplicationBar-0.QATRightToolBar-0.QAT:QTView:(103)QATRight", control_type="Group")
+   |    | 
+   |    | GroupBox - 'ToolbarFramework::QTView'    (L0, T55, R1920, B142)
+   |    | ['ToolbarFramework::QTView6', 'GroupBox9', 'ToolbarFramework::QTViewGroupBox4']
+   |    | child_window(title="ToolbarFramework::QTView", auto_id="Main--WorkspaceWindow.QTApplicationBar-0.CMD:QTView:(104)FusionAssetType", control_type="Group")
+   | 
+   | GroupBox - ''    (L0, T23, R160, B1040)
+   | ['GroupBox10', 'BROWSERGroupBox2']
+   | child_window(auto_id="Main--WorkspaceWindow.ChromiumWebBrowser:MainDashboardJsObjectIdentifier", control_type="Group")
+   | 
+   | GroupBox - ''    (L0, T137, R1920, B990)
+   | ['GroupBox11', 'BROWSERGroupBox3']
+   | child_window(auto_id="Main--WorkspaceWindow.QTCanvas", control_type="Group")
+   | 
+   | GroupBox - ''    (L0, T0, R0, B0)
+   | ['GroupBox12']
+   |    | 
+   |    | Custom - 'Learning Panel'    (L0, T0, R0, B0)
+   |    | ['Custom3', 'Learning Panel', 'Learning PanelCustom']
+   |    | child_window(title="Learning Panel", control_type="Custom")
+   |    |    | 
+   |    |    | Custom - ''    (L0, T0, R0, B0)
+   |    |    | ['Custom4']
+   | 
+   | Static - ''    (L0, T991, R135, B1041)
+   | ['COMMENTSStatic2', 'Static3']
+   |    | 
+   |    | Button - ''    (L5, T1004, R30, B1029)
+   |    | ['Button13', 'COMMENTSButton3']
+   |    | 
+   |    | Button - ''    (L30, T1004, R55, B1029)
+   |    | ['Button14', 'COMMENTSButton4']
+   |    | 
+   |    | Button - ''    (L80, T1004, R105, B1029)
+   |    | ['Button15', 'COMMENTSButton5']
+   |    | 
+   |    | Button - ''    (L55, T1004, R80, B1029)
+   |    | ['Button16', 'COMMENTSButton6']
+
+-
+   |    | 
+   |    | Button - ''    (L105, T1004, R130, B1029)
+   |    | ['Button17', 'COMMENTSButton7']
+   | 
+   | GroupBox - ''    (L134, T991, R1879, B1041)
+   | ['GroupBox13', 'COMMENTSGroupBox', 'COMMENTSGroupBox0', 'COMMENTSGroupBox1']
+   | child_window(auto_id="Main--WorkspaceWindow.CustomBackgrdLabel", control_type="Group")
+   |    | 
+   |    | Custom - ''    (L124, T1001, R2124, B1201)
+   |    | ['Custom5', 'COMMENTSCustom2']
+   |    | child_window(auto_id="Main--WorkspaceWindow.CustomBackgrdLabel.QtSlider", control_type="Custom")
+   |    |    | 
+   |    |    | GroupBox - ''    (L132, T1001, R2132, B1081)
+   |    |    | ['GroupBox14', 'COMMENTSGroupBox2']
+   | 
+   | Static - ''    (L1875, T991, R1920, B1041)
+   | ['Static4']
+   | child_window(auto_id="Main--WorkspaceWindow.SettingsBtnLabel", control_type="Text")
+   |    | 
+   |    | Button - ''    (L1887, T1004, R1912, B1029)
+   |    | ['Button18']
+   |    | child_window(auto_id="Main--WorkspaceWindow.SettingsBtnLabel.SettingsBtn", control_type="Button")
