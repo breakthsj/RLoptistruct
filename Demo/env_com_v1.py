@@ -54,6 +54,16 @@ class Env:
     def reset(self):
         time.sleep(0.5)
         self.counter = 0
+        #reset position
+        s_ = [{'X': 0, 'Y': 0, 'Z': 0, 'C': 0}]
+
+        # csv 파일 작성하기_새로운 액션에 대한
+        csv_dir = r"C:\Users\break\Downloads\RLop\RLoptistruct\Demo\demo_com_0514\demo_com.csv"
+        field = ['X', 'Y', 'Z', 'C']
+        with open(csv_dir, 'w', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=field)
+            writer.writeheader()
+            writer.writerows(s_)
 
         return self.get_state()
 
@@ -95,7 +105,7 @@ class Env:
         s_ = [{'X': state[0], 'Y': state[1], 'Z': state[2], 'C':state[3]}]
 
         # csv 파일 작성하기_새로운 액션에 대한
-        csv_dir = r"C:\Users\break\Downloads\Fusion360_script\Demo\demo_com_0514\demo_com.csv"
+        csv_dir = r"C:\Users\break\Downloads\RLop\RLoptistruct\Demo\demo_com_0514\demo_com.csv"
         field = ['X', 'Y', 'Z', 'C']
         with open(csv_dir, 'w', newline='') as f:
             writer = csv.DictWriter(f, fieldnames=field)
@@ -106,25 +116,32 @@ class Env:
         fusion360_com.makeblock(self.dig)
 
     def get_state(self):
-        # csv 파일 받아오기_state
-        csv_dir = r"C:\Users\break\Downloads\Fusion360_script\Demo\demo_com_0514\demo_com.csv"
-        with open(csv_dir, 'r') as f:
-            reader = csv.DictReader(f)
-            dict_list = []
-            for elemt in reader:
-                dict_list.append(elemt)
-        if dict_list == []:
-            print("빈 리스트")
-        # # csv 파일 받아오기_state_pandas
-        # csv_dir = r"C:\Users\break\Downloads\Fusion360_script\Demo\demo_com_0514\demo_com.csv"
-        # data = pd.read_csv(csv_dir)
+        try:
+            # csv 파일 받아오기_state
+            csv_dir = r"C:\Users\break\Downloads\RLop\RLoptistruct\Demo\demo_com_0514\demo_com.csv"
+            with open(csv_dir, 'r') as f:
+                reader = csv.DictReader(f)
+                dict_list = []
+                for elemt in reader:
+                    dict_list.append(elemt)
+            if dict_list == []:
+                print("빈 리스트1")
 
-        X = int(dict_list[0]['X'])
-        Y = int(dict_list[0]['Y'])
-        Z = int(dict_list[0]['Z'])
-        C = int(dict_list[0]['C'])
-        # state설정
-        state = [X, Y, Z, C]
+            X = int(dict_list[0]['X'])
+            Y = int(dict_list[0]['Y'])
+            Z = int(dict_list[0]['Z'])
+            C = int(dict_list[0]['C'])
+            # state설정
+            state = [X, Y, Z, C]
 
-        return state
+            if len(state) == 4:
+                # self loop return
+                return state
+            else:
+                self.get_state()
+
+        except:
+            self.get_state()
+
+
 

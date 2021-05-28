@@ -7,6 +7,10 @@ import tensorflow as tf
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.optimizers import Adam
 
+# gpu 상태 점검 / vram 50% 할당
+config = tf.compat.v1.ConfigProto()
+config.gpu_options.per_process_gpu_memory_fraction = 0.5
+session = tf.compat.v1.Session(config=config)
 
 
 # 상태가 입력, 각 행동의 확률이 출력인 인공신경망 생성
@@ -96,7 +100,7 @@ if __name__ == "__main__":
 
     scores, episodes = [], []
 
-    EPISODES = 200
+    EPISODES = 1000
     for e in range(EPISODES):
         done = False
         score = 0
@@ -111,7 +115,6 @@ if __name__ == "__main__":
             # 선택한 행동으로 환경에서 한 타임스텝 진행 후 샘플 수집
             next_state, reward, done = env.step(action)
             next_state = np.reshape(next_state, [1, state_size])
-
             agent.append_sample(state, action, reward)
             score += reward
 
@@ -121,7 +124,7 @@ if __name__ == "__main__":
                 # 에피소드마다 정책신경망 업데이트
                 entropy = agent.train_model()
                 # 에피소드마다 학습 결과 출력
-                print("episode: {:3d} | score: {:3d} | entropy: {:.3f}".format(
+                print("episode: {:3f} | score: {:3f} | entropy: {:.3f}".format(
                     e, score, entropy))
 
                 scores.append(score)

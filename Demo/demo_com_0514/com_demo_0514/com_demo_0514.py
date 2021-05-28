@@ -145,6 +145,16 @@ def makebox():
         # Get the root component of the active design.
         rootComp = design.rootComponent
 
+        # 처음 파일 돌리는 경우 새로운 document
+        if rootComp.bRepBodies.count == 0:
+            doc = app.documents.add(adsk.core.DocumentTypes.FusionDesignDocumentType)
+            # 다시 루트 지정
+            product = app.activeProduct
+            design = adsk.fusion.Design.cast(product)
+            design.designType = adsk.fusion.DesignTypes.DirectDesignType
+            rootComp = design.rootComponent
+
+
         # Create sub occurrence
         occurrences = rootComp.occurrences
 
@@ -153,7 +163,7 @@ def makebox():
         subOcc = occurrences.addNewComponent(adsk.core.Matrix3D.create())
 
         # csv 파일 받아오기
-        csv_dir = r"C:\Users\break\Downloads\Fusion360_script\Demo\demo_com_0514\demo_com.csv"
+        csv_dir = r"C:\Users\break\Downloads\RLop\RLoptistruct\Demo\demo_com_0514\demo_com.csv"
         with open(csv_dir, 'r') as f:
             reader = csv.DictReader(f)
             dict_list = []
@@ -165,11 +175,13 @@ def makebox():
 
         # 생성 바디 컴포넌트 묶음
         if rootComp.bRepBodies.count > 49:
+            k = 1
             for j in reversed(range(0, rootComp.bRepBodies.count)):
                 # ui.messageBox('{}'.format(j))
                 body = rootComp.bRepBodies.item(j)
                 body.moveToComponent(subOcc)
         else:
+            k = 0
             for j in range(0, rootComp.bRepBodies.count):
                 body = rootComp.bRepBodies.item(j)
                 body.copyToComponent(subOcc)
@@ -192,7 +204,7 @@ def makebox():
             writer.writerows(dict_list)
 
         # 로컬 저장
-        folder = 'C:/Users/break/Downloads/Fusion360_script/Demo/demo_com_0514/'
+        folder = 'C:/Users/break/Downloads/RLop/RLoptistruct/Demo/demo_com_0514/'
 
         # Construct the output filename.
         filename = folder + 'Box'
@@ -204,6 +216,10 @@ def makebox():
 
         # 컴포넌트 삭제
         subOcc.deleteMe()
+
+        # k=1 일떄 (바디가 50개일때) doc 삭제
+        if k == 1:
+            app.documents.item(1).close(saveChanges=False)
 
         # # 바디 갯수가 50(설정)개가 되면 컴포넌트 삭제
         # if rootComp.bRepBodies.count > 4:
